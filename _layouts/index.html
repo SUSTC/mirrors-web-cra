@@ -50,7 +50,7 @@
 								{% raw %}
 								<tr v-for="mir in filteredMirrorList" :class="['row', 'status-'+mir.status]" :key="mir.name">
 									<td class="col-md-8">
-										<a class="mirror-item-label"  data-toggle="popover" data-trigger="hover" data-placement="right" 
+										<a class="mirror-item-label"  data-toggle="popover" data-trigger="hover" data-placement="right"
 											:data-content="mir.description" :href="getURL(mir)" :aria-label="mir.name + ', ' + mir.description">
 											{{mir.name}}
 											<span class="label label-new" v-if='mir.is_new'>new</span>
@@ -112,9 +112,12 @@
 						<div class="thuhidden">
 							<h4> <span class="fa fa-envelope-o"></span> 联系我们 </h4>
 							<ul>
-								<li><strong>意见反馈</strong> <br /> <a href="https://github.com/tuna/issues">https://github.com/tuna/issues</a></li>
-								<li><strong>发送邮件</strong> <br /> <a id="eib1gieB"></a></li>
-								<li><strong>在线交流</strong> <br /> <a href="https://fishroom.tuna.moe/log/tuna/today"> #tuna at freenode </a></li>
+								<li><strong>意见反馈</strong> <br /> <a href="https://github.com/sustc/issues">https://github.com/sustc/issues</a></li>
+								<li>
+									<strong>在线交流</strong> <br />
+									<a href="https://jq.qq.com/?_wv=1027&k=5n8TCkb"> SUSTech@LUG at QQ </a> <br />
+									<a href="https://t.me/joinchat/EqIW9le2vu5Lbx_sC0_4Uw"> SUSTech@LUG at telegram </a>
+								</li>
 							</ul>
 						</div>
 						<div>
@@ -123,7 +126,7 @@
 								<li><a href="/help/">使用帮助</a></li>
 								<li><a href="/status/#server-status">服务器状态</a></li>
 								<li><a href="/status/#syncing-status">同步状态</a></li>
-								<li class="thuhidden"><a href="https://tuna.moe/">清华大学 TUNA 协会</a></li>
+								<li class="thuhidden"><a href="https://cra.moe/">南方科技大学计算机研究协会</a></li>
 								<li><a href="https://github.com/tuna/tunasync">镜像管理器源码</a></li>
 								<li><a href="https://github.com/tuna/tunasync-scripts">自定义镜像脚本</a></li>
 							</ul>

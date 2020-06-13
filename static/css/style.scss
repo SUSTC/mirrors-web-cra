@@ -12,14 +12,14 @@ URL: http://alvarez.is
 ################################################################# */
 
 $color_bg_dark: #222;
-$color_thu_purple: #82318E;
-$color_thu_purple_dark: #C353D3;
+$color_thu_purple: #f39655;
+$color_thu_purple_dark: #f39655;
 $color_light_grey: #888;
 $color_grey: #555;
 $color_grey_dark: #aaa;
 $color_primary: $color_thu_purple;
 $color_primary_dark: $color_thu_purple_dark;
-$color_primary_light: #d8aff6;
+$color_primary_light: #FFC49B;
 $color_primary_rgb: 92,48,125;
 $color_secondary: #384452;
 $color_secondary_dark: #ddd;
@@ -34,10 +34,10 @@ $color_row_hover: #e0f3fc;
 $color_row_hover_dark: #325475;
 
 @mixin dark {
-    @media (prefers-color-scheme: dark) { 
+    @media (prefers-color-scheme: dark) {
         @content
     }
-} 
+}
 
 @import
 "Lato",
@@ -450,14 +450,14 @@ body {
       color: #fff;
       text-align: center;
       border-radius: 5px;
-      
+
       /* Position the tooltip text - see examples below! */
       position: absolute;
       top: 0;
       left: 0;
       z-index: 1;
     }
-    
+
     &:hover > .tooltiptext {
       visibility: visible;
     }
