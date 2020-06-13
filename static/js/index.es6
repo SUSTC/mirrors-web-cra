@@ -94,7 +94,7 @@ var stringifyTime = function(ts){
 			` ${('0'+date.getHours()).substr(-2)}:${('0'+date.getMinutes()).substr(-2)}`;
 		ago = timeago.format(date);
 	} else {
-		str = "0000-00-00 00:00";
+		str = "-";
 		ago = "Never";
 	}
 	return [str, ago];
